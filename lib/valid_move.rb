@@ -1,5 +1,5 @@
 # code your #valid_move? method here
-def valid_move?(value)
+def valid_move?(board, index)
   if value >= 1 && value <= 9
     index = value.to_i - 1
     position_taken?(board, index)
