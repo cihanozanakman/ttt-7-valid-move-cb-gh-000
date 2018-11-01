@@ -2,7 +2,7 @@
 def valid_move?(value)
   if value >= 1 && value <= 9
     index = value.to_i - 1
-    position_taken?(board)
+    position_taken?(board, index)
   else
     return false
   end
